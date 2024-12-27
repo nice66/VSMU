@@ -65,7 +65,6 @@ class RandomRotFlip(object):
 
         return {'image': image, 'label': label}
 
-# 高斯噪声
 def augment_gaussian_noise(data_sample, noise_variance=(0, 0.1)):
     if noise_variance[0] == noise_variance[1]:
         variance = noise_variance[0]
